@@ -140,7 +140,7 @@
     // inserts the given text into it  
     // and outputs it out as HTML 
     function htmlEncode(value) { 
-      return "localhost.com/QRdisplay.php/?curs=" + $('<div/>').text(value) 
+      return "raffe.ro/Mihai-Tudorache/SE/QRdisplay.php/?curs=" + $('<div/>').text(value) 
         .html(); 
     } 
   

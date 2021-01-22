@@ -45,6 +45,10 @@
 	</nav>
 	<!-- End Navbar -->
 
+	<?php
+		echo 'Hello ' . htmlspecialchars($_GET["curs"]) . '!';
+	?>
+
 	<button type="submit">Login</button>
 
 
