@@ -2,8 +2,6 @@
     <?php
     	session_start();
 
-    	echo $_SESSION["curs"];
-
 		$con = mysqli_connect('localhost', 'root', '', 'university');
 		if (mysqli_connect_errno()){
 			die('Error. Failed to connect to MySQL: '.mysqli_connect_error());
@@ -29,7 +27,7 @@
 		$row = mysqli_fetch_row($result);
 		echo 'Your attendance has been registered for course '.$row[1].' on the date of '.$row[2].' at time '.$row[3];
 
-		$s = 'INSERT INTO Attendance VALUES (\''.$row[0].'\', \''.$row1[0].'\');'
+		$s = 'INSERT INTO Attendance VALUES (\''.$row[0].'\', \''.$row1[0].'\');';
 		$r = mysqli_query($con, $s);
 
     	if(!$r){
